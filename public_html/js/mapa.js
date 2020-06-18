@@ -16,7 +16,10 @@ function initMap(){
           infoWindow.setContent('Ubicación determinada');
           infoWindow.open(map);
           map.setCenter(pos);
+<<<<<<< HEAD
+=======
           map.
+>>>>>>> 252a8a63a86128a4f3c9beb9874d7c5079b503d8
         }, function(){
             handleLocationError(true, infoWindow, map.getCenter());
         });
