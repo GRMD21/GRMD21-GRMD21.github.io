@@ -1,29 +1,55 @@
-#mapaPrincipal {
-    height: 90%;
-    background-color: lightgray;
-}
-
-#btn_Sidemenu {
-    margin-left: 10px;
-}
-
 header {
     background-color: #FF6459;
     color: white;
 }
 
-html, main {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body * {
+    border-radius: 3px;
 }
 
-#saludo {
-    font-family: normal;
-    font-style: normal;
-    font-size: 24px;
-    color: white;
-    align-content: center;
+.modal-footer * {
+    border-radius: 3px;
+    margin: 5px;
+}
+
+#btn_Sidemenu {
+    margin-left: 10px;
+    font-size: 36px;
+}
+
+#tbl_personal {
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: central;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+#btn_cambiarPass, #btn_cambiarName, #btn_cambiarEmail{
+    margin: 10px;
+}
+
+#tbl_direccion {
+    margin-top: 10px;
+    width: 93%;
+    border-collapse: collapse;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#tbl_direccion {
+    text-align: center;
+}
+
+#tbl_direccion button {
+    border-radius: 7px;
+    margin: 10px;
+}
+
+#btn_agregarDir {
+    margin: 10px;
+    margin-left: 80%;
+    margin-bottom: 20px;
 }
 
 .material-icons {
@@ -88,10 +114,6 @@ html, main {
 
 .sidenav a#link5:hover {
     color: #FF2122; /*Rojo*/
-}
-
-.sidenav a#link6:hover {
-    color: #38D03F; /*Verde*/
 }
 
 /* Position and style the close button (top right corner) */

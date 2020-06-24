@@ -8,26 +8,25 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
         <link href="public_html/css/mapa.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body style="background-color: #FF6459">
-        <div class="sidenav" id="menu">
-            <a id="link1" href="#">Rutas</a>
-            <a id="link2" href="#">Desechos</a>
-            <a id="link3" href="public_html/articulos.html">Artículos</a>
-            <!--<a id="link4" href="#">Gestión</a>-->
-            <hr>
-            <a id="link5" href="public_html/configuracion.html">Configuración</a>
-            <a id="link6" href="#">Cerrar sesión</a>
-            <a href="javascript:void(0)" class="closebtn" onclick="cerrarSidemenu()()">&times;</a>
-        </div>
-        <span id="btnSidemenu" style="cursor: pointer" onclick="abrirSidemenu()()"><i class="large material-icons">menu</i></span>
-        
+    <body>
+        <header>
+            <div class="sidenav" id="menu">
+                <a id="link1" href="#">Rutas</a>
+                <a id="link2" href="desechos.html">Desechos</a>
+                <a id="link3" href="articulos.html">Artículos</a>
+                <!--<a id="link4" href="#">Gestión</a>-->
+                <hr>
+                <a id="link5" href="configuracion.html">Configuración</a>
+                <a id="link6" href="logout.html">Cerrar sesión</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="cerrarSidemenu()()">&times;</a>
+            </div>
+            <span id="btn_Sidemenu" style="cursor: pointer" onclick="abrirSidemenu()()"><i class="large material-icons">menu</i></span>
+        </header>
         <div id="main">
             <div id="mapaPrincipal">
 
-                <h2>TEXTO</h2>
             </div>
         </div>
 

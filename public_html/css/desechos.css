@@ -1,29 +1,10 @@
-#mapaPrincipal {
-    height: 90%;
-    background-color: lightgray;
-}
-
-#btn_Sidemenu {
-    margin-left: 10px;
-}
-
 header {
     background-color: #FF6459;
     color: white;
 }
 
-html, main {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#saludo {
-    font-family: normal;
-    font-style: normal;
-    font-size: 24px;
-    color: white;
-    align-content: center;
+body * {
+    border-radius: 3px;
 }
 
 .material-icons {
@@ -88,10 +69,6 @@ html, main {
 
 .sidenav a#link5:hover {
     color: #FF2122; /*Rojo*/
-}
-
-.sidenav a#link6:hover {
-    color: #38D03F; /*Verde*/
 }
 
 /* Position and style the close button (top right corner) */
