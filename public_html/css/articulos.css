@@ -1,6 +1,8 @@
-#mapaPrincipal {
+html, main {
     height: 90%;
-    background-color: lightgray;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #btn_Sidemenu {
@@ -12,18 +14,44 @@ header {
     color: white;
 }
 
-html, main {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+#txt_tituloArticulo{
+    text-align: center;
 }
 
-#saludo {
-    font-family: normal;
-    font-style: normal;
-    font-size: 24px;
-    color: white;
-    align-content: center;
+#txt_fechaArticulo{
+    margin: 10px;
+    text-align: right;
+}
+
+#txt_autorArticulo{
+    margin: 10px;
+}
+
+#list_meses{
+    padding: 10px;
+    margin-top:15px;
+    border: #000;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#txt_cuerpoArticulo{
+    margin: 10px;
+    font-size: medium;
+    text-align: justify;
+}
+
+#art_body{
+    margin: 25px;
+    background-color: white;
+    border: #000;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#art_side{
+    margin-top: 25px;
+    margin-right: 25px;
 }
 
 .material-icons {
@@ -88,10 +116,6 @@ html, main {
 
 .sidenav a#link5:hover {
     color: #FF2122; /*Rojo*/
-}
-
-.sidenav a#link6:hover {
-    color: #38D03F; /*Verde*/
 }
 
 /* Position and style the close button (top right corner) */
