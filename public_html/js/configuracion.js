@@ -7,9 +7,13 @@ function cerrarSidemenu() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
+//select usuario.idDireccion as idDir, direccion.idCiudad as idCity, direccion.calle1 as cal1, 
+//direccion.calle2 as cal2, ciudad.nombre as name, ciudad.region as reg, ciudad.pais as country 
+//
+
 function cargarXML() {
     var xml = new XMLHttpRequest();
-    xml.open('GET', 'public_html/php/select_usuario.php');
+    xml.open('GET', 'php/select_usuario.php');
     xml.onload = function () {
         if (this.status == 200) {
             var data = JSON.parse(this.responseText).Table, tbodyHtml = '';

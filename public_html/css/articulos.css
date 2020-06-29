@@ -91,7 +91,7 @@ header {
     text-decoration: none;
     font-family: monospace;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: 900;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -111,11 +111,15 @@ header {
 }
 
 .sidenav a#link4:hover {
-    color: #F2F200; /*Amarillo*/
+    color: #E3E300; /*Amarillo*/
 }
 
 .sidenav a#link5:hover {
     color: #FF2122; /*Rojo*/
+}
+
+.sidenav a#link6:hover {
+    color: #1114C9; /*Azul*/
 }
 
 /* Position and style the close button (top right corner) */

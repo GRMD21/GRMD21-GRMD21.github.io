@@ -1,7 +1,17 @@
 #mapaPrincipal {
-    height: 90%;
+    height: 92%;
+    width: 100%;
     background-color: lightgray;
 }
+
+.modal-footer * {
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.input {
+    width: min-content;
+} 
 
 #btn_Sidemenu {
     margin-left: 10px;
@@ -12,8 +22,13 @@ header {
     color: white;
 }
 
+.header p{
+    text-align: center;
+}
+
 html, main {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -63,7 +78,7 @@ html, main {
     text-decoration: none;
     font-family: monospace;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: 900;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -83,7 +98,7 @@ html, main {
 }
 
 .sidenav a#link4:hover {
-    color: #F2F200; /*Amarillo*/
+    color: #E3E300; /*Amarillo*/
 }
 
 .sidenav a#link5:hover {
