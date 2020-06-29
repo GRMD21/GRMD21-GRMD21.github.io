@@ -14,7 +14,7 @@ function initMap(){
     //var marker = new google.maps.Marker({position: starting, map: map});
     var infoWindow = new google.maps.InfoWindow;
     
-    downloadUrl('public_html/php/select_puntos.php', function(data, status) {
+    downloadUrl('php/select_puntos.php', function(data, status) {
         var xml = data.responseXML;
         console.log(xml);
         console.log(status);
@@ -99,6 +99,12 @@ function abrirSidemenu() {
 function cerrarSidemenu() {
   document.getElementById("menu").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
+}
+
+function valorRadio(val) {
+
+    document.getElementById("radioPuntoValue").value=val;
+    document.getElementById("radioRutaValue").value=val;
 }
 
 function nada() {}

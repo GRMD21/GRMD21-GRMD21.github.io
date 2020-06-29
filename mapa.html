@@ -12,21 +12,102 @@
     </head>
     <body>
         <header>
-            <div class="sidenav" id="menu">
-                <a id="link1" href="#">Rutas</a>
-                <a id="link2" href="desechos.html">Desechos</a>
-                <a id="link3" href="articulos.html">Artículos</a>
-                <!--<a id="link4" href="#">Gestión</a>-->
-                <hr>
-                <a id="link5" href="configuracion.html">Configuración</a>
-                <a id="link6" href="logout.html">Cerrar sesión</a>
-                <a href="javascript:void(0)" class="closebtn" onclick="cerrarSidemenu()()">&times;</a>
+            <div class="row">
+                <div class="col-1">
+                    <div class="sidenav" id="menu">
+                        <a id="link1" href="mapa.html">Mapa</a>
+                        <a id="link2" href="articulos.html">Artículos</a>
+                        <a id="link3" href="desechos.html">Desechos</a>
+                        <hr>
+                        <a id="link4" href="configuracion.html">Configuración</a>
+                        <a id="link5" href="gestion.html">Gestión</a>
+                        <a id="link6" href="logout.html">Cerrar sesión</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="cerrarSidemenu()()">&times;</a>
+                    </div>
+                    <span id="btn_Sidemenu" style="cursor: pointer" onclick="abrirSidemenu()()"><i class="large material-icons">menu</i></span>
+                </div>
+                <div class="col-1 offset-4">
+                    <span id="btn_puntos" style="cursor: pointer" data-toggle="modal" data-target="#modal_abrirPuntos"><i class="material-icons">place</i></span>
+                </div>
+                <div class="col-1">
+                    <span id="btn_rutas" style="cursor: pointer" data-toggle="modal" data-target="#modal_abrirRuta"><i class="material-icons">directions_bus</i></span>
+                </div>
             </div>
-            <span id="btn_Sidemenu" style="cursor: pointer" onclick="abrirSidemenu()()"><i class="large material-icons">menu</i></span>
         </header>
         <div id="main">
-            <div id="mapaPrincipal">
+            <div class="modal fade" id="modal_abrirPuntos" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Buscar puntos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <label for="radioPunto">Seleccione el radio de búsqueda en metros</label> 
+                                <input type="range" id="radioPunto" name="radioPunto" min="0" max="15000" onchange="valorRadio(this.value)">
+                                <br>
+                                <input type="text" id="radioPuntoValue" value=""> m
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p style="text-align: right">
+                                <button class="btn-success" type="button" id="btn_modalRadioPunto" onclick="----">Aceptar</button>
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
 
+            <div class="modal fade" id="modal_abrirRuta">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Buscar rutas</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <p>Seleccione día</p>
+                                <select id="slct_dia">
+                                    <option value="0">Lunes</option>
+                                    <option value="1">Martes</option>
+                                    <option value="2">Miércoles</option>
+                                    <option value="3">Jueves</option>
+                                    <option value="4">Viernes</option>
+                                    <option value="5">Sábado</option>
+                                    <option value="6">Domingo</option>
+                                </select>
+                                <br>
+                                <label for="radioRuta">Seleccione el radio de búsqueda en metros</label> 
+                                <input type="range" id="radioRuta" name="radioRuta" min="0" max="1000" onchange="valorRadio(this.value)">
+                                <br>
+                                <input type="text" id="radioRutaValue" value=""> m
+                                <br><br>
+                                <p id="txt_camiones">En este momento, hay 3 camiones de basura que pasan en el radio indicado</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p style="text-align: right">
+                                <button class="btn-success" type="button" id="btn_modalRadioPunto" onclick="">Aceptar</button>
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="mapaPrincipal">
             </div>
         </div>
 
